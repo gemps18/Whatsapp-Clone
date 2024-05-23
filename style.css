@@ -114,6 +114,14 @@ a {
     cursor: pointer;
 }
 
+.sidebar-header-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2.2rem;
+    color: var(--txt-grey);
+}
+
 .sidebar-header-icons a:active {
     background: var(--box-shadow-color);
     border-radius: 50%;
@@ -122,4 +130,43 @@ a {
 
 .sidebar-header-icons a:nth-child(2) {
     margin: 0 3rem;
+}
+
+/*-- Sidebar Notifications --*/
+
+.sidebar-notifications {
+    display: flex;
+    align-items: center;
+    background: var(--notification-bg-color);
+    height: 9rem;
+    padding: 0 2rem;
+    cursor: pointer;
+}
+
+.sidebar-notifications > a {
+    margin-right: 2rem;
+    font-size: 2.2rem;
+}
+
+.sidebar-notifications-messages {
+    font-size: 1.6rem;
+    color: var(--notification-txt-color);
+}
+
+.sidebar-notifications-messages span {
+    font-size: 1.6rem;
+    color: var(--notification-txt-color);
+}
+
+.sidebar-notifications-messages a {
+    font-size: 1.4rem;
+    color: var(--notification-link-color);
+}
+
+.sidebar-notifications-messages i {
+    vertical-align: middle;
+}
+
+.sidebar-notifications-messages a:hover {
+    text-decoration: underline;
 }
