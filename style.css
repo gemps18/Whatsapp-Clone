@@ -277,6 +277,7 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 28rem;
+    color: var(--txt-grey);
 }
 
 .chat-message-typing {
@@ -292,6 +293,11 @@ a {
     display: flex;
     align-items: flex-end;
     flex: 1;
+}
+
+.chat-right-bottom-left a {
+    margin-right: 0.2rem;
+    width: 2rem;
 }
 
 .chat-right-bottom-right {
@@ -319,4 +325,47 @@ a {
 .chat-options a {
     vertical-align: middle;
     font-size: 2.2rem;
+}
+
+/*-- Main --*/
+
+.chat-window.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 1rem 2rem;
+    background: var(--sidebar-header);
+    cursor: pointer;
+}
+
+.chat-window-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.contact-name-and-status-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-window-contact-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
+
+.chat-window-contact-name {
+    font-size: 1.7rem;
+}
+
+.chat-window-contact-status {
+    font-size: 1.3rem;
+    color: var(--txt-grey);
+}
+
+.chat-window-header-right {
+    margin-left: 2rem;
 }
