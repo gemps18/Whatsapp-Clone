@@ -369,3 +369,123 @@ a {
 .chat-window-header-right {
     margin-left: 2rem;
 }
+
+.chat-window-header-right a {
+    font-size: 2.2rem;
+    color: var(--txt-grey);
+}
+
+.chat-window-header-right a:active {
+    background: var(--box-shadow-color);
+    border-radius: 50%;
+    box-shadow: 0 0 1px 8px var(--box-shadow-color);
+}
+
+/*-- Main Chat Window --*/
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 10rem 6rem 10rem;
+    height: 62rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: var(--search-bar-bg);
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background: var(--chat-window-beige);
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background: var(--chat-window-scrollbar-color);
+}
+
+.sender,
+.reciever {
+    border-radius: 0.5rem;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+
+.sender {
+    background: var(--sender-message-green);
+    align-self: flex-end;
+}
+
+.reciever {
+    background: var(--white);
+    align-self: flex-start;
+}
+
+.sender-message,
+.reciever-message {
+    font-size: 1.4rem;
+    margin-right: 3rem;
+}
+
+.message-time {
+    color: var(--txt-grey);
+    font-size: 1.08rem;
+}
+
+.message-status {
+    vertical-align: bottom;
+}
+
+.reciever-message-tail,
+.sender-message-tail {
+    width: 0.8rem;
+    height: 1.3rem;
+    position: absolute;
+    top: 0;
+}
+
+.reciever-message-tail {
+    left: -0.5rem;
+}
+
+.sender-message-tail {
+    right: -0.5rem;
+}
+
+/*  Type Message Bar */
+
+.type-message-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background: var(--type-message-bar);
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.type-message-bar a {
+    cursor: pointer;
+    font-size: 2.2rem;
+    color: var(--txt-grey);
+}
+
+.type-message-bar-center {
+    flex: 1;
+}
+
+.type-message-bar-center input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem 1rem 2rem;
+    flex: 1;
+    border-radius: 2rem;
+    font-family: "Segoe UI";
+}
+
+.type-message-bar-right {
+    margin-left: 2rem;
+    cursor: pointer;
+    font-size: 2.2rem;
+    color: var(--txt-grey);
+}
